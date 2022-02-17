@@ -1,0 +1,47 @@
+Assignment 1:
+============
+
+1. Create a local repository and 3 text files into it.
+
+   For creatintg local repo:
+   -------------------------------
+      1)create a directory.
+      2)go into a new directory and type git init.
+  
+  For creating 3 text files:
+  ----------------------------
+      1)create 3 files : touch file1.txt file2.txt file3.txt
+      
+2. Create 2 braches as Dev and Test.
+   
+   For creating 2 branch ,we perform the following commands:
+  ----------------------------------------------------------
+     1) git checkout Dev.
+     2) git checkout Test.
+
+3. Commit 1 file into Dev and 2 files into Test.
+  
+  for commiting 1 file into dev branch:
+  -----------------------------------------
+     1)git checkout -b Dev
+     2)git add file1.txt
+     3)git commit -m "file 1 added"
+
+  for commiting 2 files into test branch:
+  ------------------------------------------
+     1)git checkout -b Test.
+     2) git add file2.txt file3.txt
+     3) git commit -m "file2 and file3 added"
+
+4. Modify 1st file some text from Dev branch.
+   
+  for modifing 1st file from dev branch:
+  -----------------------------------------
+     1)git checkout -b Dev
+     2)echo "this is file1.txt">>file1.txt
+
+5. Finally merge all together in a master branch.
+   
+   1)switched to master branch.
+   2)git merge Dev
+   3)git merge Test
